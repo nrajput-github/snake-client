@@ -12,7 +12,18 @@ const connect = function () {
     console.log('Successfully connected to game server');
     conn.write('Name: NAV');
     
+    /*
+    setInterval(() => {conn.write('Move: up');
+
+    }, 1000);
+    */
+    //conn.write('Move: up');
+ //   conn.write('Move: down');
+   // conn.write('Move: left');
+    //conn.write('Move: right');
+    
   });
+
   // client.js
 conn.on('data', (data) => {
   console.log('Server says: ', data);
