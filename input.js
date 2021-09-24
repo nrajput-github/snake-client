@@ -36,6 +36,9 @@ const setupInput = function (servconn) {
     } else if (key === 'd') {
      //   console.log("Move: right");
         connection.write('Move: right');
+    } else if (key === 'm') {
+        //   console.log("Move: right");
+           connection.write('Say: Hola!');
     } else {
         console.log("Got: " + key);
     }
